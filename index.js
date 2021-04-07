@@ -27,7 +27,7 @@ app.post("/CandySuccess", (req, res) => {
 
     const stat = {
         candyName: name,
-        request: req,
+        request: req.body,
     }
     stats.insert(stat);
 
