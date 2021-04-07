@@ -23,7 +23,7 @@ function GetNameFromCandyID(id) {
 app.post("/CandySuccess", (req, res) => {
     console.log("RESIVED CALL SPIN THE MOTORS");
 
-    const name = GetNameFromCandyID(req.body.finalData.candyId);
+    const name = GetNameFromCandyID(req.body.candyId);
 
     const stat = {
         candyName: name,
