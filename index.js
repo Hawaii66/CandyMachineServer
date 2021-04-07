@@ -41,7 +41,7 @@ app.post("/CandySuccess", (req, res) => {
 
 app.get("/CandyMachineStatus", (req, res) => {
     const stat = {
-        request: req
+        body: req.body
     }
     stats.insert(stat).then(r => {
         inQueue.find().then(result => {
