@@ -31,7 +31,7 @@ app.post("/CandySuccess", (req, res) => {
     }
     stats.insert(stat);
 
-    inQueue.insert(req.body.finalData);
+    inQueue.insert(req.body);
 
     res.json({
         status: 200,
