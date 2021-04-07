@@ -18,6 +18,9 @@ function GetNameFromCandyID(id) {
     if (id === 1) {
         return "GottOchBlandat"
     }
+    if (id === 2) {
+        return "SuraKolaNappar"
+    }
 }
 
 app.post("/CandySuccess", (req, res) => {
