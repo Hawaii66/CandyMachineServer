@@ -16,10 +16,13 @@ app.use(express.json());
 
 function GetNameFromCandyID(id) {
     if (id === 1) {
-        return "GottOchBlandat"
+        return "Ferrari Cola Bilar"
     }
     if (id === 2) {
-        return "SuraKolaNappar"
+        return "Frukt Nappar"
+    }
+    if (id === 3) {
+        return "Sura S"
     }
 }
 
